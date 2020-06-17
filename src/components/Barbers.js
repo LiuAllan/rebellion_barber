@@ -11,8 +11,7 @@ const Barbers = () => (
 	//init Aos - Global animations parameters
 	useEffect(() => {
 		Aos.init({ duration: 3000 });
-	}, []),
-
+	}),
 		<StyledBarbers>
 			<div className="barbers" id="barbers">
 				<div className="barbers-title">
@@ -63,7 +62,6 @@ const Barbers = () => (
 				</div>
 			</div>
 		</StyledBarbers>
-
 );
 
 export default Barbers;

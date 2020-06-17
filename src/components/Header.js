@@ -4,7 +4,6 @@ import 'bootstrap/dist/css/bootstrap.min.css';
 import React from 'react';
 import styled from 'styled-components';
 import Scrollspy from 'react-scrollspy';
-import Scroll from 'react-scroll';
 import logo from '../images/logo.jpg';
 
 // Styled Component
@@ -41,6 +40,19 @@ const StyledHeader = styled.header`
 		color: ${props => props.theme.anotherGrey}
 	}
 
+	//Media Queries
+	@media only screen and (max-width: 991px)
+	{
+		.navbar-brand {
+			width: 100px;
+		}
+
+		img {
+			width: 100%;
+			min-height: auto;
+			object-fit: cover;
+		}
+	}
 
 `;
 

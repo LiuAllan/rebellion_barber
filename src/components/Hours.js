@@ -65,7 +65,7 @@ const Hours = () => (
 							data-aos="fade-left"
 						/>
 
-						<div className="end">
+						<div className="end">/>
 							<h3>Feel free to wait for your favourite barber, we don’t take it personally!</h3>
 							<p>If you have a hard time describing what you’d like for your haircut, bring a couple photos from the internet and our experienced barbers will take it from there!</p>
 						</div>	

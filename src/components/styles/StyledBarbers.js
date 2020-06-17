@@ -81,6 +81,22 @@ const StyledBarbers = styled.div`
 		padding: 5px 20px;
 	}
 
+	@media only screen and (max-width: 991px)
+	{
+		.barbers-body {
+			display: grid;
+		}
+
+		.Michael, .Josh, .Stephen, .Kenni {
+			grid-column: span 2;
+			width: 75%;
+		}
+		
+
+		
+		
+	}
+
 `;
 
 export default StyledBarbers;

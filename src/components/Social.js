@@ -23,11 +23,11 @@ class Social extends React.Component
 			<StyledSocial>
 				<div className="social">
 					<a href="https://www.youtube.com/channel/UCH8K5Wdi5k9UrprywIy7YtQ?view_as=subscriber" target="_blank" rel="noopener noreferrer">
-						<i class="fab fa-youtube"></i>
+						<i className="fab fa-youtube"></i>
 					</a>
 
 					<a href="https://www.facebook.com/rebellionbarbershop/" target="_blank" rel="noopener noreferrer">
-						<i class="fab fa-facebook-square"></i>
+						<i className="fab fa-facebook-square"></i>
 					</a>
 
 					<a href="https://www.instagram.com/rebellionbarbershop/" target="_blank" rel="noopener noreferrer">

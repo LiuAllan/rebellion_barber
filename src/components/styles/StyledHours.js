@@ -32,6 +32,8 @@ const StyledHours = styled.div`
 	.end {
 		display: grid;
 		grid-column: span 2;
+		padding-top: 5rem;
+		padding-bottom: 5rem;
 	}
 
 	.info-content {
@@ -60,6 +62,25 @@ const StyledHours = styled.div`
 	b {
 		color: ${props => props.theme.blue};
 	}
+
+	//Media Queries
+	@media only screen and (max-width: 991px)
+	{
+		.hours, .info-content{
+			display: grid;
+			grid-gap: 0px;
+		}
+		
+		img {
+			grid-column: 1 / -1;
+		}
+
+		.info-row1, .info-row2 {
+			grid-column: span 2;
+		}
+		
+	}
+
 `;
 
 export default StyledHours;
