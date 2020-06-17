@@ -3,8 +3,8 @@ import styled from 'styled-components';
 const StyledBarbers = styled.div`
 
 	.barbers {
-		background-color: #333;
-		height: 170vh;
+		background-color: ${props => props.theme.grey};
+		min-height: 100vh;
 		font-family: 'Raleway';
 	}
 
@@ -17,26 +17,26 @@ const StyledBarbers = styled.div`
 	}
 
 	.barbers-title-inner {
-		color: #fff;
+		color: ${props => props.theme.offWhite};
 		// font-weight: bold;
 		text-transform: uppercase;
-		border-bottom: 1px solid #fff;
+		border-bottom: 1px solid ${props => props.theme.offWhite};
 	}
 
 	.barbers-body {
 		display: grid;
 		grid-template-columns: 1fr 1fr;
-		// background: red;
 		justify-content: center;
 		align-items: center;
 		grid-gap: 20px;
 		padding-top: 2rem;
+		height: 1fr;
 	}
 
 	.Michael {
 		width: 50%;
-		background-color: white;
-		box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+		background-color: ${props => props.theme.offWhite};
+		box-shadow: ${props => props.theme.boxShadow};
  		margin-bottom: 20px;
  		margin: auto;
 	}
@@ -47,8 +47,8 @@ const StyledBarbers = styled.div`
 
 	.Josh {
 		width: 50%;
-		background-color: white;
-		box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+		background-color: ${props => props.theme.offWhite};
+		box-shadow: ${props => props.theme.boxShadow};
  		margin-bottom: 25px;
  		margin: auto;
 	}
@@ -59,8 +59,8 @@ const StyledBarbers = styled.div`
 
 	.Stephen {
 		width: 50%;
-		background-color: white;
-		box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+		background-color: ${props => props.theme.offWhite};
+		box-shadow: ${props => props.theme.boxShadow};
  		margin-bottom: 25px;
  		margin: auto;
 	}
@@ -71,8 +71,8 @@ const StyledBarbers = styled.div`
 
 	.Kenni {
 		width: 50%;
-		background-color: #fff;
-		box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+		background-color: ${props => props.theme.offWhite};
+		box-shadow: ${props => props.theme.boxShadow};
  		margin-bottom: 25px;
  		margin: auto;
 	}

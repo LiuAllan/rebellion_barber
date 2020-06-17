@@ -33,7 +33,7 @@ const BgElement = Element.BgElement;
 const Intro = () => {
 	return(
 		<StyledIntro>
-			<div className="intro">
+			<div className="intro" id="home">
 			    <BannerAnim>
 			      <Element key="element1"
 			        prefixCls="banner-user-elem"

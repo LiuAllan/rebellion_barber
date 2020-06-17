@@ -3,6 +3,8 @@ import { Navbar, Nav } from 'react-bootstrap';
 import 'bootstrap/dist/css/bootstrap.min.css';
 import React from 'react';
 import styled from 'styled-components';
+import Scrollspy from 'react-scrollspy';
+import Scroll from 'react-scroll';
 import logo from '../images/logo.jpg';
 
 // Styled Component
@@ -26,6 +28,19 @@ const StyledHeader = styled.header`
 		margin: 0;
 		padding: 0;
 	}
+
+	.is-current.nav-link {
+		color: white !important;
+	}
+
+	.nav-link {
+		color: ${props => props.theme.anotherGrey} !important;
+	}
+
+	.active {
+		color: ${props => props.theme.anotherGrey}
+	}
+
 
 `;
 
@@ -53,13 +68,17 @@ class Header extends React.Component
 					<Navbar.Toggle aria-controls="responsive-navbar-nav" />
 					  	<Navbar.Collapse id="responsive-navbar-nav">
 					    	<Nav className="mr-auto"/>
+					    	
 					    		<Nav>
-							      <Nav.Link href="#barbers">Barbers</Nav.Link>
-							      <Nav.Link href="#services">Services</Nav.Link>
-							      <Nav.Link href="#hours">Hours</Nav.Link>
-							      <Nav.Link href="#shop">Shop</Nav.Link>
-							      <Nav.Link href="#contact">Contact</Nav.Link>
+					    			<Scrollspy items={ ['barbers', 'services', 'hours', 'contact'] } currentClassName="is-current" componentTag={Nav} offset={-100}>
+									    <Nav.Link href="#barbers">Barbers</Nav.Link>
+									    <Nav.Link href="#services">Services</Nav.Link>
+									    <Nav.Link href="#hours">Hours</Nav.Link>
+									    <Nav.Link href="#contact">Contact</Nav.Link>
+									    <Nav.Link href="https://rebellion-barbershop-apparel.myshopify.com/">Shop</Nav.Link>
+									</Scrollspy>
 					    		</Nav>
+					    	
 					</Navbar.Collapse>
 				</Navbar>
 			</StyledHeader>
