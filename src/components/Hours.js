@@ -24,7 +24,7 @@ const Hours = () => (
 			<div className="hours-body">
 				<div className="info">
 					<h3 className="time" data-aos="fade">We are open 9am-5pm every day of the week, except holidays!</h3>
-					<div className="info-content">
+					<div className="info-content" style={{ "overflow": "hidden" }}>
 
 						<img
 							src={outside}

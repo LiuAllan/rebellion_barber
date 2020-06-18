@@ -52,6 +52,7 @@ const StyledHeader = styled.header`
 			min-height: auto;
 			object-fit: cover;
 		}
+
 	}
 
 `;
