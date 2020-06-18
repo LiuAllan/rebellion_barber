@@ -85,11 +85,13 @@ const StyledBarbers = styled.div`
 	{
 		.barbers-body {
 			display: grid;
+			grid-template-rows: 1fr 1fr 1fr 1fr;
+			grid-gap: 0px;
 		}
 
-		.Michael, .Josh, .Stephen, .Kenni {
+		.m-grid,.j-grid, .s-grid, .k-grid {
 			grid-column: span 2;
-			width: 75%;
+			width: 100%;
 		}
 		
 

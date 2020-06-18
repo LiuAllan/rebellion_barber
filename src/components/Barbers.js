@@ -23,7 +23,7 @@ const Barbers = () => (
 					</h1>
 				</div>
 				<div className="barbers-body">
-					<div style={{ "overflow": "hidden" }}>
+					<div className="m-grid">
 						<div 
 							data-aos="fade-left"
 							className="Michael"
@@ -36,7 +36,7 @@ const Barbers = () => (
 						</div>
 					</div>
 					
-					<div>
+					<div className="j-grid">
 						<div className="Josh" data-aos="fade-right">
 							<img src={josh} alt="" style={{ "width": "100%" }} />
 							<div className="Josh-container">
@@ -46,7 +46,7 @@ const Barbers = () => (
 						</div>
 					</div>
 
-					<div>
+					<div className="s-grid">
 						<div className="Stephen" data-aos="fade-left">
 							<img src={stephen} alt="" style={{ "width": "100%" }} />
 							<div className="Stephen-container">
@@ -56,7 +56,7 @@ const Barbers = () => (
 						</div>
 					</div>
 
-					<div>
+					<div className="k-grid">
 						<div 
 							data-aos="fade-right"
 							className="Kenni"
